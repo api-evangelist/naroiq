@@ -1,7 +1,29 @@
 aid: naroiq
-name: Naroiq
-description: Naroiq is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/naroiq.png
+name: NaroIQ
+description: >-
+  NaroIQ is a European ETF issuance and infrastructure platform that lets capital
+  management companies and ETF initiators launch and operate their own
+  exchange-traded funds while retaining control over their value chain. It acts as
+  a single coordination layer across the full ETF lifecycle — fund setup, basket and
+  portfolio composition file (PCF) management, intraday indicative net asset value
+  (iNAV) calculation, an in-house indexing engine, optional portfolio management, and
+  end-to-end regulatory compliance under Germany's BaFin and the EU's ESMA regimes.
+  The company is a General Catalyst portfolio company based in Europe. As of this
+  enrichment pass NaroIQ publishes no public API, SDK, developer portal, or machine
+  discovery surface (no /.well-known/*, no llms.txt); this profile captures the
+  company identity and published web properties.
 url: https://raw.githubusercontent.com/api-evangelist/naroiq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- ETF
+- Exchange-Traded Funds
+- Fund Infrastructure
+- Asset Management
+- Financial Services
+- Fintech
+- Indexing
+- Regulatory Compliance
+- Europe
 apis: []
+common:
+- type: DomainSecurity
+  url: security/naroiq-domain-security.yml
+- type: Website
+  url: https://www.naroiq.com/
+- type: Blog
+  url: https://www.naroiq.com/newsroom
+- type: PrivacyPolicy
+  url: https://www.naroiq.com/privacy-policy
+- type: Imprint
+  url: https://www.naroiq.com/imprint
+- type: Governance
+  url: https://www.naroiq.com/governance
+- type: Careers
+  url: https://join.com/companies/naroiqcom
+- type: LinkedIn
+  url: https://www.linkedin.com/company/naroiq/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
